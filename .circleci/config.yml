@@ -45,7 +45,7 @@ jobs:
 
       - run: 
           name: Generating .env
-          command: chmod +x build/create_env_vars.sh; ./build/create_env_vars.sh; cd build; ls -al
+          command: chmod +x config/create_env_vars.sh; ./config/create_env_vars.sh; cd config; ls -al
 
       - run: 
           name: Building
