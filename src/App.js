@@ -5,7 +5,6 @@ import axios from "axios";
 import { Button, Popover, Typography, Row, Col } from "antd";
 import Areas from "./CityData/Areas";
 
-import Config from "./Config";
 import GoogleAnalyticsTag from "./Components/GoogleAnalyticsTag";
 import FAQModal from "./Components/FAQModal";
 import AddNewPlaceModal from "./Components/AddNewPlaceModal";
@@ -207,7 +206,9 @@ class App extends React.Component {
             </Row>
           </div>
         </div>
-        <GoogleAnalyticsTag analyticsID={Config.GoogleAnalyticsID} />
+        <GoogleAnalyticsTag
+          analyticsID={process.env.REACT_APP_GOOGLE_ANALYTICS_ID}
+        />
       </AreaContext.Provider>
     );
   }
