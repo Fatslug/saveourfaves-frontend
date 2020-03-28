@@ -45,6 +45,7 @@ export class PlaceAutosuggestion extends React.Component {
           <div>Don't see your fave?</div>
           <div>
             <a
+              href="#"
               onClick={() => {
                 this.setState({ showAddModal: false });
               }}
