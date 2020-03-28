@@ -1,4 +1,4 @@
-cat <<EOF > ./build/.env.production
+cat <<EOF > .env.production
 MONGO_URL = $MONGO_URL
 JSON_SIZE_LIMIT = $JSON_SIZE_LIMIT
 APP_URL = $APP_URL
