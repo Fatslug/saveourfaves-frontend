@@ -44,6 +44,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: 
+          name: Generating .env
+          command: chmod +x build/create_env_vars.sh; ./build/create_env_vars.sh; cd build; ls -al
+
+      - run: 
           name: Building
           command: npm run build
 
