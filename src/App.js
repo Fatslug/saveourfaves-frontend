@@ -31,6 +31,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     // TODO this is janktown routing
+    console.log("Fuck:", process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
     const path = window.location.pathname.slice(1).toLowerCase();
     const currentArea = Areas[path] ? path : "sf";
 
