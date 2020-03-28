@@ -93,7 +93,7 @@ class App extends React.Component {
                       SaveOurFaves
                     </Title>
                     <div style={{ float: "right" }}>
-                      <a href="#">
+                      <button>
                         <Title
                           onClick={() => {
                             this.showFAQModal();
@@ -107,7 +107,7 @@ class App extends React.Component {
                         >
                           FAQ
                         </Title>
-                      </a>
+                      </button>
                       <Popover content={<ShareOptions />}>
                         <Button shape="round" className="header-button">
                           Tell friends

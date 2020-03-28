@@ -109,14 +109,13 @@ export class EmailSubscription extends React.Component {
                 </p>
                 <p>
                   (If you've found their link{" "}
-                  <a
-                    href="#"
+                  <button
                     onClick={() => {
                       this.setState({ showAddModal: true });
                     }}
                   >
                     let us know
-                  </a>
+                  </button>
                   )
                 </p>
               </>

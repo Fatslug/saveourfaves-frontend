@@ -80,13 +80,12 @@ export class PlaceResultMain extends React.Component {
               {!place.giftCardURL && !place.emailContact && (
                 <p>
                   Do they have a link to sell gift cards?{" "}
-                  <a
-                    href="#"
+                  <button
                     className="app-link"
                     onClick={() => this.setState({ showAddModal: true })}
                   >
                     Point us to it here.
-                  </a>
+                  </button>
                 </p>
               )}
             </Col>

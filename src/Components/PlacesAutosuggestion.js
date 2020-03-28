@@ -44,15 +44,14 @@ export class PlaceAutosuggestion extends React.Component {
         <div>
           <div>Don't see your fave?</div>
           <div>
-            <a
-              href="#"
+            <button
               onClick={() => {
                 this.setState({ showAddModal: false });
               }}
               className="primary-link"
             >
               Let us know
-            </a>
+            </button>
           </div>
         </div>
       );

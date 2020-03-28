@@ -180,8 +180,7 @@ export class NeighborhoodCards extends React.Component {
             }}
           >
             {this.state.offset !== 0 && (
-              <a
-                href="#"
+              <button
                 className={
                   "neighborhood-card-arrow neighborhood-card-arrow-left " +
                   (this.state.offset >= this.state.neighborhoods.length - 1
@@ -195,12 +194,11 @@ export class NeighborhoodCards extends React.Component {
                 }}
               >
                 {"‹"}
-              </a>
+              </button>
             )}
             {this.getCardsForCurrentPage()}
             {this.state.offset < this.state.neighborhoods.length - 1 && (
-              <a
-                href="#"
+              <button
                 className={
                   "neighborhood-card-arrow neighborhood-card-arrow-right " +
                   (this.state.offset >= this.state.neighborhoods.length - 1
@@ -217,7 +215,7 @@ export class NeighborhoodCards extends React.Component {
                 }}
               >
                 ›
-              </a>
+              </button>
             )}
           </section>
         )}
