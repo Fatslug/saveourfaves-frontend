@@ -8,5 +8,4 @@ USE_HTTPS = $USE_HTTPS
 PORT = $PORT
 EOF
 ls
-chmod -R 755 ./build/
 cp .env.production ./build/.env.production

@@ -43,13 +43,14 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: 
-          name: Generating .env
-          command: chmod +x config/create_env_vars.sh; ./config/create_env_vars.sh; cd config; ls -al
 
       - run: 
           name: Building
           command: npm run build
+
+      - run: 
+          name: Generating .env
+          command: chmod +x config/create_env_vars.sh; ./config/create_env_vars.sh; cd config; ls -al
 
       - run:
           name: Remove Old Build
