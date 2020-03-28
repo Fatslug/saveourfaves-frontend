@@ -7,5 +7,6 @@ ALLOWED_ORIGINS = $ALLOWED_ORIGINS
 USE_HTTPS = $USE_HTTPS
 PORT = $PORT
 EOF
-sudo chmod -R 755 ./
+ls
+chmod -R 755 ./build/
 cp .env.production ./build/.env.production
