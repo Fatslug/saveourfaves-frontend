@@ -7,4 +7,4 @@ ALLOWED_ORIGINS = $ALLOWED_ORIGINS
 USE_HTTPS = $USE_HTTPS
 PORT = $PORT
 EOF
-cp .env.production ./build/.env.production
+cp .env.production /build/.env.production
