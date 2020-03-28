@@ -1,8 +1,9 @@
-cat >  ./build/.env.production
-echo "MONGO_URL = $MONGO_URL
+cat <<EOF >/build/.env.production
+MONGO_URL = $MONGO_URL
 JSON_SIZE_LIMIT = $JSON_SIZE_LIMIT
 APP_URL = $APP_URL
 USE_CORS = $USE_CORS
 ALLOWED_ORIGINS = $ALLOWED_ORIGINS
 USE_HTTPS = $USE_HTTPS
-PORT = $PORT" >> ./build/.env.production
+PORT = $PORT
+EOF
